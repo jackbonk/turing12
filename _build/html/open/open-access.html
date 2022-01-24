@@ -1,0 +1,536 @@
+
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Open access &#8212; The Turing Way</title>
+    
+  <link href="../_static/css/theme.css" rel="stylesheet">
+  <link href="../_static/css/index.ff1ffe594081f20da1ef19478df9384b.css" rel="stylesheet">
+
+    
+  <link rel="stylesheet"
+    href="../_static/vendor/fontawesome/5.13.0/css/all.min.css">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="../_static/vendor/fontawesome/5.13.0/webfonts/fa-solid-900.woff2">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="../_static/vendor/fontawesome/5.13.0/webfonts/fa-brands-400.woff2">
+
+    
+      
+
+    
+    <link rel="stylesheet" type="text/css" href="../_static/pygments.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/sphinx-book-theme.css?digest=c3fdc42140077d1ad13ad2f1588a4309" />
+    <link rel="stylesheet" type="text/css" href="../_static/togglebutton.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/copybutton.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/mystnb.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/sphinx-thebe.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/panels-main.c949a650a448cc0ae9fd3441c0e17fb0.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/panels-variables.06eb56fa6e07937060861dad626602ad.css" />
+    
+  <link rel="preload" as="script" href="../_static/js/index.be7d3bbb2ef33a8344ce.js">
+
+    <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
+    <script src="../_static/jquery.js"></script>
+    <script src="../_static/underscore.js"></script>
+    <script src="../_static/doctools.js"></script>
+    <script src="../_static/togglebutton.js"></script>
+    <script src="../_static/clipboard.min.js"></script>
+    <script src="../_static/copybutton.js"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
+    <script src="../_static/sphinx-book-theme.d59cb220de22ca1c485ebbdc042f0030.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.4/require.min.js"></script>
+    <script src="https://unpkg.com/@jupyter-widgets/html-manager@^0.20.0/dist/embed-amd.js"></script>
+    <script async="async" src="https://unpkg.com/thebe@0.5.1/lib/index.js"></script>
+    <script>
+        const thebe_selector = ".thebe"
+        const thebe_selector_input = "pre"
+        const thebe_selector_output = ".output"
+    </script>
+    <script async="async" src="../_static/sphinx-thebe.js"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="Open notebooks" href="open-notebooks.html" />
+    <link rel="prev" title="Open hardware" href="open-hardware.html" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="docsearch:language" content="None">
+    
+
+    <!-- Google Analytics -->
+    
+  </head>
+  <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="80">
+    
+    <div class="container-fluid" id="banner"></div>
+
+    
+
+    <div class="container-xl">
+      <div class="row">
+          
+<div class="col-12 col-md-3 bd-sidebar site-navigation show" id="site-navigation">
+    
+        <div class="navbar-brand-box">
+    <a class="navbar-brand text-wrap" href="../index.html">
+      
+        <!-- `logo` is deprecated in Sphinx 4.0, so remove this when we stop supporting 3 -->
+        
+      
+      
+      <img src="../_static/logo.png" class="logo" alt="logo">
+      
+      
+      <h1 class="site-logo" id="site-title">The Turing Way</h1>
+      
+    </a>
+</div><form class="bd-search d-flex align-items-center" action="../search.html" method="get">
+  <i class="icon fas fa-search"></i>
+  <input type="search" class="form-control" name="q" id="search-input" placeholder="Search this book..." aria-label="Search this book..." autocomplete="off" >
+</form><nav class="bd-links" id="bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item active">
+        <ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../welcome.html">
+   Welcome
+  </a>
+ </li>
+</ul>
+<ul class="current nav bd-sidenav">
+ <li class="toctree-l1 current active has-children">
+  <a class="reference internal" href="../reproducible-research.html">
+   Guide for Reproducible Research
+  </a>
+  <input checked="" class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" type="checkbox"/>
+  <label for="toctree-checkbox-1">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul class="current">
+   <li class="toctree-l2 has-children">
+    <a class="reference internal" href="../overview/overview.html">
+     Overview
+    </a>
+    <input class="toctree-checkbox" id="toctree-checkbox-2" name="toctree-checkbox-2" type="checkbox"/>
+    <label for="toctree-checkbox-2">
+     <i class="fas fa-chevron-down">
+     </i>
+    </label>
+    <ul>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../overview/overview-definitions.html">
+       Definitions
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../overview/overview-benefit.html">
+       Benefits
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../overview/overview-resources.html">
+       Resources
+      </a>
+     </li>
+    </ul>
+   </li>
+   <li class="toctree-l2 current active has-children">
+    <a class="reference internal" href="open.html">
+     Open Research
+    </a>
+    <input checked="" class="toctree-checkbox" id="toctree-checkbox-3" name="toctree-checkbox-3" type="checkbox"/>
+    <label for="toctree-checkbox-3">
+     <i class="fas fa-chevron-down">
+     </i>
+    </label>
+    <ul class="current">
+     <li class="toctree-l3">
+      <a class="reference internal" href="open-data.html">
+       Open Data
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="open-source.html">
+       Open Source
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="open-hardware.html">
+       Open Hardware
+      </a>
+     </li>
+     <li class="toctree-l3 current active">
+      <a class="current reference internal" href="#">
+       Open Access
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="open-notebooks.html">
+       Open Notebooks
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="open-scholarship.html">
+       Open Scholarship
+      </a>
+     </li>
+    </ul>
+   </li>
+  </ul>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../demo.html">
+   Reproducible notebooks
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../demo_2.html">
+   Ploty
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../myst_demo.html">
+   MyST example
+  </a>
+ </li>
+</ul>
+
+    </div>
+</nav> <!-- To handle the deprecated key -->
+
+<div class="navbar_extra_footer">
+  Powered by <a href="https://jupyterbook.org">Jupyter Book</a>
+</div>
+
+</div>
+
+
+          
+
+
+          
+<main class="col py-md-3 pl-md-4 bd-content overflow-auto" role="main">
+    
+    <div class="topbar container-xl fixed-top">
+    <div class="topbar-contents row">
+        <div class="col-12 col-md-3 bd-topbar-whitespace site-navigation show"></div>
+        <div class="col pl-md-4 topbar-main">
+            
+            <button id="navbar-toggler" class="navbar-toggler ml-0" type="button" data-toggle="collapse"
+                data-toggle="tooltip" data-placement="bottom" data-target=".site-navigation" aria-controls="navbar-menu"
+                aria-expanded="true" aria-label="Toggle navigation" aria-controls="site-navigation"
+                title="Toggle navigation" data-toggle="tooltip" data-placement="left">
+                <i class="fas fa-bars"></i>
+                <i class="fas fa-arrow-left"></i>
+                <i class="fas fa-arrow-up"></i>
+            </button>
+            
+            
+<div class="dropdown-buttons-trigger">
+    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn" aria-label="Download this page"><i
+            class="fas fa-download"></i></button>
+
+    <div class="dropdown-buttons">
+        <!-- ipynb file if we had a myst markdown file -->
+        
+        <!-- Download raw file -->
+        <a class="dropdown-buttons" href="../_sources/open/open-access.md"><button type="button"
+                class="btn btn-secondary topbarbtn" title="Download source file" data-toggle="tooltip"
+                data-placement="left">.md</button></a>
+        <!-- Download PDF via print -->
+        <button type="button" id="download-print" class="btn btn-secondary topbarbtn" title="Print to PDF"
+                onclick="printPdf(this)" data-toggle="tooltip" data-placement="left">.pdf</button>
+    </div>
+</div>
+
+            <!-- Source interaction buttons -->
+
+<div class="dropdown-buttons-trigger">
+    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn"
+        aria-label="Connect with source repository"><i class="fab fa-github"></i></button>
+    <div class="dropdown-buttons sourcebuttons">
+        <a class="repository-button"
+            href="https://github.com/executablebooks/jupyter-book"><button type="button" class="btn btn-secondary topbarbtn"
+                data-toggle="tooltip" data-placement="left" title="Source repository"><i
+                    class="fab fa-github"></i>repository</button></a>
+        <a class="issues-button"
+            href="https://github.com/executablebooks/jupyter-book/issues/new?title=Issue%20on%20page%20%2Fopen/open-access.html&body=Your%20issue%20content%20here."><button
+                type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip" data-placement="left"
+                title="Open an issue"><i class="fas fa-lightbulb"></i>open issue</button></a>
+        
+    </div>
+</div>
+
+            <!-- Full screen (wrap in <a> to have style consistency -->
+
+<a class="full-screen-button"><button type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip"
+        data-placement="bottom" onclick="toggleFullScreen()" aria-label="Fullscreen mode"
+        title="Fullscreen mode"><i
+            class="fas fa-expand"></i></button></a>
+
+            <!-- Launch buttons -->
+
+        </div>
+
+        <!-- Table of contents -->
+        <div class="d-none d-md-block col-md-2 bd-toc show noprint">
+            
+            <div class="tocsection onthispage pt-5 pb-3">
+                <i class="fas fa-list"></i> Contents
+            </div>
+            <nav id="bd-toc-nav" aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#what-is-open-access">
+   What is open access?
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#repositories-and-self-archiving">
+     Repositories and self-archiving
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#open-access-publishing">
+     Open access publishing
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#why-does-open-access-matter">
+   Why does open access matter?
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#best-practice-for-open-access">
+   Best practice for open access
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#self-archiving">
+     Self-archiving
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#publication">
+     Publication
+    </a>
+   </li>
+  </ul>
+ </li>
+</ul>
+
+            </nav>
+        </div>
+    </div>
+</div>
+    <div id="main-content" class="row">
+        <div class="col-12 col-md-9 pl-md-3 pr-md-0">
+            <!-- Table of contents that is only displayed when printing the page -->
+            <div id="jb-print-docs-body" class="onlyprint">
+                <h1>Open access</h1>
+                <!-- Table of contents -->
+                <div id="print-main-content">
+                    <div id="jb-print-toc">
+                        
+                        <div>
+                            <h2> Contents </h2>
+                        </div>
+                        <nav aria-label="Page">
+                            <ul class="visible nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#what-is-open-access">
+   What is open access?
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#repositories-and-self-archiving">
+     Repositories and self-archiving
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#open-access-publishing">
+     Open access publishing
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#why-does-open-access-matter">
+   Why does open access matter?
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#best-practice-for-open-access">
+   Best practice for open access
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#self-archiving">
+     Self-archiving
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#publication">
+     Publication
+    </a>
+   </li>
+  </ul>
+ </li>
+</ul>
+
+                        </nav>
+                    </div>
+                </div>
+            </div>
+            
+              <div>
+                
+  <div class="tex2jax_ignore mathjax_ignore section" id="open-access">
+<h1>Open access<a class="headerlink" href="#open-access" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="what-is-open-access">
+<h2>What is open access?<a class="headerlink" href="#what-is-open-access" title="Permalink to this headline">¶</a></h2>
+<p>One of the most common ways to disseminate research results is by writing a manuscript and publishing it in a journal, conference proceedings or book. For many years those publications were available to the public if purchased by means of a subscription fee or individually.
+However, new knowledge is built by synthesizing current scholarship and then building upon it.
+At the turn of the 21st century a new movement appeared with a clear objective: make all the research results available to anyone interested in reading it, free of charge by any user, with no technical obstacles such as mandatory registration or login to specific platforms.
+This movement took the name of Open access and established two initial strategies to achieve its final goal: self-archiving and open access publishing.</p>
+<div class="section" id="repositories-and-self-archiving">
+<h3>Repositories and self-archiving<a class="headerlink" href="#repositories-and-self-archiving" title="Permalink to this headline">¶</a></h3>
+<p>The aim of the self-archiving movement is to provide tools and assistance to scholars to deposit their refereed journal articles in open electronic repositories.
+As a result of the first strategy we see self-archiving practices: researchers depositing and disseminating papers in institutional or subject based repositories.
+There has also been a growth in the publication of preprints through institutional repositories and preprint servers.
+Preprints are widely used in physical sciences and now emerging in life sciences and other fields.
+Preprints are documents that have not been peer reviewed but are considered as a complete publication in a first stage.
+Some of the preprint servers include open peer review services and the availability to post new versions of the initial paper once reviewed by peers.</p>
+<p>At the beginning of 2019 more than 4000 repositories are available for researchers to self-archive their publications according to the <a class="reference external" href="http://roar.eprints.org/">registry of open access repositories</a>.
+In this list there are institutional repositories, subject based or thematic repositories, and harvesters.
+Institutional repositories are generally managed by research performing institutions to provide to their community a place to archive and share openly papers and other research outputs.
+Subject based repositories are usually managed by research communities and most of the contents are related to a certain discipline.
+Finally, harvesters aggregate content from different repositories becoming sites to perform general searches and build other value-added services.</p>
+<p>When choosing a journal to publish research results, researchers should take a moment to read the journal policy regarding the transfer of copyright.
+Many journals still require for publication that authors transfer full copyright.
+This transfer of rights implies that authors must ask for permission to reuse their own work beyond what is allowed by the applicable law, unless there are some uses already granted.
+Such granted uses may include teaching purposes, sharing with colleagues, and self-archiving by researchers of their papers in repositories.
+Sometimes there a common policy among all the journals published by the same publishers but in general journals have their own policy, especially when they are published on behalf of a scientific society.
+When looking at the self-archiving conditions we must identify two key issues: the version of the paper that can be deposited and when it can be made publicly available.</p>
+<p>Regarding the version, some journals allow the dissemination of the submitted version, also known as a preprint, and they allow its replacement for a reviewed version once the final paper has been published.
+Due to the increase of policies requiring access to research results, most of the journals allow self-archiving of the accepted version of the paper, also known as the author manuscript or postprint.
+This version is the final text once the peer review process has ended but it has not the final layout of the publication.
+Finally some journals do allow researchers to deposit the final published version, also known as the version of record.</p>
+<p>In relation to the moment to make the paper publicly available, many journals establish a period of time from its original publication - the embargo period, which can range from zero to 60 months - when making the paper publicly available is not permitted.
+Some journals include or exclude embargoes depending on the versions.
+For instance the accepted version could be made publicly available after publication but the published version must wait 12 months.</p>
+</div>
+<div class="section" id="open-access-publishing">
+<h3>Open access publishing<a class="headerlink" href="#open-access-publishing" title="Permalink to this headline">¶</a></h3>
+<p>Open access publishing attempts to ensure permanent open access to all the articles published in journals, and as a result we have seen the creation of the open access journals.
+The number of open access journals has increased during the last years, according to the Directory of Open access Journals (<a class="reference external" href="http://www.doaj.org">DOAJ</a>), currently there are more than 12,000.
+Open access journal must provide free access to its contents but it also must licence them to allow reusability.</p>
+<p>Currently many paywalled journals offer individual open access options to researchers once the paper is accepted after peer review.
+Those options include the publication under a free content licence and free accessibility to anyone since its first publication.
+This model is commonly known as the hybrid model because in the same issue of a journal, readers can find open access and paywalled contributions.
+Usually publishers ask for a fee to open individual contributions.</p>
+<p>Open access publishing has two primary versions — gratis and libre.
+Gratis open access is simply making research available for others to read without having to pay for it.
+However, it does not grant the user the right to make copies, distribute, or modify the work in any way beyond fair use.
+Libre open access is gratis, meaning the research is available free of charge, but it goes further by granting users additional rights, usually via a Creative Commons licence, so that people are free to reuse and remix the research.
+There are varying degrees of what may be considered libre open access.
+For example, some scholarly articles may permit all uses except commercial use, some may permit all uses except derivative works, and some may permit all uses and simply require attribution.
+While some would argue that libre open access should be free of any copyright restrictions (except attribution), other scholars consider a work that removes at least some permission barriers to be libre.</p>
+</div>
+</div>
+<div class="section" id="why-does-open-access-matter">
+<h2>Why does open access matter?<a class="headerlink" href="#why-does-open-access-matter" title="Permalink to this headline">¶</a></h2>
+<p>Research is useless if it’s not shared; even the best research is ineffectual if others aren’t able to read and build on it.
+When price barriers keep articles locked away, research cannot achieve its full potential.
+Open access benefits researchers who can work more effectively with a better understanding of the literature.
+It also helps avoid duplication of effort.
+No researcher (or funder) wants to waste time and money conducting a study if they know it has been attempted elsewhere.
+But, duplication of effort is all-too-possible when researchers can’t effectively communicate with one another and make results known to others in their field and beyond.
+It also benefits researchers by providing better visibility and therefore higher impact/citation rate for their scholarship.<br />
+Numerous publishers, both non-profit and for-profit, voluntarily make their articles openly available at the time of publication or within 6-12 months.
+Many have switched from a closed, subscription model to an open one as a strategic business decision to increase their journal’s exposure and impact.
+Further it can be argued that taxpayers who pay for much of the research published in journals have a right to access the information resulting from that investment without charge.
+Finally, if research is available to the widest possible pool of readers then it is more likely/easy for it to be checked and reproduced.</p>
+</div>
+<div class="section" id="best-practice-for-open-access">
+<h2>Best practice for open access<a class="headerlink" href="#best-practice-for-open-access" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="self-archiving">
+<h3>Self-archiving<a class="headerlink" href="#self-archiving" title="Permalink to this headline">¶</a></h3>
+<p>Self-archive a publication in a suitable repository, institutional or subject-based, following the possible restrictions posed by the publisher, for example an embargo period, or limits on the allowed version to be deposited in such archives.
+In doing this it is important to make sure you are aware of the copyright implications of any documents/agreements you make when submitting your manuscript to a journal.
+If your institution does not have an institutional repository, advocate for the creation of one.
+You can check journal policies on self-archiving using <a class="reference external" href="http://www.sherpa.ac.uk/romeo/index.php">SHERPA/RoMEO</a>.</p>
+</div>
+<div class="section" id="publication">
+<h3>Publication<a class="headerlink" href="#publication" title="Permalink to this headline">¶</a></h3>
+<p>Consider submitting your work to a journal that is open access.
+When doing this be aware that there may be funds or discounts available to cover any associated costs.</p>
+</div>
+</div>
+</div>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "binder-examples/jupyter-stacks-datascience",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            kernelName: "python3",
+            path: "./open"
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
+
+              </div>
+              
+            
+                <!-- Previous / next buttons -->
+<div class='prev-next-area'> 
+    <a class='left-prev' id="prev-link" href="open-hardware.html" title="previous page">
+        <i class="fas fa-angle-left"></i>
+        <div class="prev-next-info">
+            <p class="prev-next-subtitle">previous</p>
+            <p class="prev-next-title">Open hardware</p>
+        </div>
+    </a>
+    <a class='right-next' id="next-link" href="open-notebooks.html" title="next page">
+    <div class="prev-next-info">
+        <p class="prev-next-subtitle">next</p>
+        <p class="prev-next-title">Open notebooks</p>
+    </div>
+    <i class="fas fa-angle-right"></i>
+    </a>
+</div>
+            
+        </div>
+    </div>
+    <footer class="footer">
+  <p>
+    
+      By The Turing Way Community<br/>
+    
+        &copy; Copyright 2020.<br/>
+  </p>
+</footer>
+</main>
+
+
+      </div>
+    </div>
+  
+  <script src="../_static/js/index.be7d3bbb2ef33a8344ce.js"></script>
+
+  </body>
+</html>
